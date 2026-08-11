@@ -50,9 +50,10 @@ public class MathPractice {
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
         int a = 0 ;
-        while (num>0){
-            a+= num % 10;
+        while (num > 0) {
+            a += num % 10;
         }
+        scanner.close();
 
     }
 }
