@@ -1,0 +1,3 @@
+Hello, this is BufferedWriter!
+
+This is an example of writing text to a file.
