@@ -4,6 +4,7 @@ public class WritingFiles {
     public static void main(String[] args){
         FileWriterExample();
         BufferedWriterExample();
+        PrintWriterExample();
     }
 
     public static void FileWriterExample(){
@@ -50,6 +51,28 @@ public class WritingFiles {
             System.out.println("BufferedWriter throws an error of: " + e.getMessage());
         }finally {
             System.out.println("===========================");
+        }
+    }
+
+    public static void PrintWriterExample(){
+
+        // Print Writer provides better formatting capabalities
+        try{
+            PrintWriter pw = new PrintWriter("print_writer_example.txt");
+
+            pw.printf("Name: %s, Age: %d", "John", 25);
+            System.out.println("PrintWriter has been written to the file successfully.");
+            System.out.println(pw.toString());
+            pw.close();
+
+            BufferedReader br = new BufferedReader(new FileReader("print_writer_example.txt"));
+            System.out.println(br.readLine());
+            br.close();
+
+        }catch(IOException e){
+            System.out.println("PrintWriter throws an error of: " + e.getMessage());
+        }finally{
+            System.out.println("========================");
         }
     }
 
