@@ -9,6 +9,7 @@ public class Exception1 {
         MultipleTryCatchExample();
         NestedTryCatchExample();
         MyOtherThrowExample();
+        checkAge(17);
     }
 
     public static void CheckedExceptionExample() {
@@ -91,9 +92,35 @@ public class Exception1 {
         throw new Exception("This is a thrown exception");
     } catch (Exception e) {
         System.out.println(e.getMessage());
+    }finally{
+        System.out.println("=========================");
     }
 }
- 
+/** this is overkill
+    public static void checkAge(int age) {
+        try {
+            if (age < 18) {
+                throw new IllegalArgumentException("Age must be 18 or older.");
+            }
+
+            System.out.println("You can enter.");
+
+        } catch (IllegalArgumentException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
+ */
+
+/** This is only for the purpose of trying the THROW keyword
+ * but I guess doing try-cath is much better*/
+public static void checkAge(int age) {
+        if (age < 18) {
+            throw new IllegalArgumentException("Age must be 18 or older.");
+        }
+        System.out.println("You can enter.");
+
+
+}
 
 
 
