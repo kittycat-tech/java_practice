@@ -83,6 +83,7 @@ public class Exception1 {
 
     /** This is complicated, throws should be handled either in main method (problematic)
      * or should be better just use try-catch block
+     *
     public static void MyThrowExample() throws Exception {
         throw new Exception("This is a thrown exception");
     } */

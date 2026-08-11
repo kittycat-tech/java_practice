@@ -24,7 +24,7 @@ public class Rectangle extends GeometricObject{
 
     /** Let's do two setter methods for width and height */
 
-    public void sedWidth(double width){
+    public void setWidth(double width){
         this.width= width;
     }
 
