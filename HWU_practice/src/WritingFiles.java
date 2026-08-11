@@ -56,7 +56,7 @@ public class WritingFiles {
 
     public static void PrintWriterExample(){
 
-        // Print Writer provides better formatting capabalities
+        // Print Writer provides better formatting capabalities:
         try{
             PrintWriter pw = new PrintWriter("print_writer_example.txt");
 
