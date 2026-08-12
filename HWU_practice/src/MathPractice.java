@@ -1,7 +1,20 @@
 import java.util.Scanner;
+import java.lang.Math;
 
 public class MathPractice {
-    public static void main(String[] args) {
+
+    //Calculating the hypotenuse:
+
+
+    public  double Hypotenuse(double legA, double legB) {
+
+        return Math.sqrt(Math.pow(legA, 2) + Math.pow(legB, 2));
+    }
+
+
+
+    public void main(String[] args) {
+        System.out.println("Hypotenuse is " + Hypotenuse(3, 4));
 
         System.out.println("The Pi value is : "+ Math.PI);
         System.out.println("Euler's number is: "+Math.E);
